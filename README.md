@@ -46,7 +46,7 @@ php artisan tinker
 
 Esto es parte de los cursos que imparte en Udemy [JuanDMGon](https://www.udemy.com/user/juandavidmezagonzlez/)
 
-En este caso lo sigo en Laravel, otros los he seguido en Symfony aunque el lo enseñaba en Laravel.
+En este caso lo sigo en Laravel, otros los he seguido en Symfony aunque él lo enseñaba en Laravel.
 
 ## License
 
