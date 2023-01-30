@@ -25,6 +25,7 @@ composer create-project laravel/laravel carpeta-de-destino
 ```
 composer require livewire/livewire
 composer require laravel/breeze
+php artisan breeze:install
 ```
 #### Crear model (-m migración -f factory -c controller)
 ```
@@ -53,4 +54,4 @@ En este caso lo sigo en Laravel, otros los he seguido en Symfony aunque él lo e
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 #### Next step
-[Cap 10](https://www.udemy.com/course/stack-tall-tailwind-alpine-laravel-y-livewire/learn/lecture/24100540#overview)
+[Cap 11](https://www.udemy.com/course/stack-tall-tailwind-alpine-laravel-y-livewire/learn/lecture/24100544#questions/17920896)
