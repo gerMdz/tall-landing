@@ -54,4 +54,4 @@ En este caso lo sigo en Laravel, otros los he seguido en Symfony aunque él lo e
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 #### Next step
-[Cap 11](https://www.udemy.com/course/stack-tall-tailwind-alpine-laravel-y-livewire/learn/lecture/24100544#questions/17920896)
+[Cap 12](https://www.udemy.com/course/stack-tall-tailwind-alpine-laravel-y-livewire/learn/lecture/24100546#overview)
