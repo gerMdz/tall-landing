@@ -11,6 +11,9 @@ En este caso es una landing page para subscripciones.
 [Tailwindcss](https://tailwindcss.com/docs/installation)
 
 [Laravel](https://laravel.com/docs/8.x/installation)
+[Alpinejs](https://alpinejs.dev/start-here)
+[Alpinejs GitHub](https://github.com/alpinejs/alpine)
+
 
 
 
@@ -42,6 +45,14 @@ php artisan tinker
 ##### Datos cargados
 > Subscriber::all(); // Muestra todas las subscripciones
 > Subscriber::factory()->create(); // Crea una nueva subscripción desde el factory
+
+##### Alpine
+
+x-data al principio de cada template.
+
+x-show en donde se debería mostrar.
+
+@clic en donde se debe hacer la acción
 
 ## Learning Laravel
 
