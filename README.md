@@ -34,6 +34,12 @@ php artisan breeze:install
 ```
 php artisan make:model Subscriber -mfc
 ```
+
+#### Crea componente Livewire
+```
+php artisan make:livewire NombreComponente
+```
+
 #### Migrando database (:fresh borra datos anteriores --seed ejecuta los seeders )
 ```
 php artisan migrate:fresh --seed
@@ -65,4 +71,4 @@ En este caso lo sigo en Laravel, otros los he seguido en Symfony aunque él lo e
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 #### Next step
-[Cap 14](https://www.udemy.com/course/stack-tall-tailwind-alpine-laravel-y-livewire/learn/lecture/24100550#overview)
+[Cap 15](https://www.udemy.com/course/stack-tall-tailwind-alpine-laravel-y-livewire/learn/lecture/24100556#questions/15135674)
