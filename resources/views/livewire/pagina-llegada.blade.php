@@ -1,4 +1,7 @@
-<div x-data="{showSubscribe: false}"
+<div x-data="{
+showSubscribe: false,
+showSuccess: true
+}"
      class="flex flex-col bg-indigo-700 h-screen w-screen">
     <nav class="pt-5 flex justify-between container mx-auto text-indigo-200 ">
         <a href="/" class="text-4xl font-bold">
@@ -28,6 +31,7 @@
         </div>
 
     </div>
+
     <div x-show="showSubscribe" @click.self="showSubscribe = false" @keydown.escape.window="showSubscribe=false"
          class="flex fixed top-0 w-full h-full bg-gray-900 bg-opacity-60 item-center">
         <div class="m-auto bg-rose-500 shadow-2xl rounded-xl p-8 ">
@@ -54,4 +58,17 @@
 
         </div>
     </div>
+
+    <div x-show="showSuccess" @click.self="showSuccess = false" @keydown.escape.window="showSuccess=false"
+         class="flex fixed top-0 w-full h-full bg-gray-900 bg-opacity-60 item-center">
+        <div class="m-auto bg-green-600 shadow-2xl rounded-xl p-8 ">
+            <p class="animate-pulse text-white font-extrabold text-6xl text-center">
+                &check;
+            </p>
+            <p class="text-white font-extrabold text-5xl text-center mt-16">Exitoso</p>
+            <p class="text-white text-3xl text-center">Enlace enviado</p>
+
+        </div>
+    </div>
+
 </div>
