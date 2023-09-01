@@ -2,5 +2,4 @@
     <livewire:pagina-llegada>
 
     </livewire:pagina-llegada>
-
 </x-guest-layout>
