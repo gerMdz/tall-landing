@@ -36,8 +36,8 @@ showSuccess: false
             Puedes subscribirte
         </p>
         <form
-            wire:submit.prevent="Subscribe"
-            class="flex flex-col items-center p-24">
+                wire:submit.prevent="Subscribe"
+                class="flex flex-col items-center p-24">
             <x-input class="px-5 py-3 w-80 border border-blue-400"
                      type="email" name="email"
                      placeholder="@email"
@@ -46,8 +46,8 @@ showSuccess: false
 
             </x-input>
             <span class="text-gray-100 text-xs">
-                        Enviaremos un correo de confirmación
-                    </span>
+                {{$errors->has('email')?$errors->first('email'):'Enviaremos un correo de confirmación'}}
+            </span>
             <x-button clsss="px-5 py-3 mt-5 w-80 bg-blue-500 justify-center">
                 Desde aquí
             </x-button>
