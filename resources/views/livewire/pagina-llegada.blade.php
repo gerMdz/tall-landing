@@ -1,8 +1,9 @@
-<div x-data="{
-showSubscribe: false,
-showSuccess: false
-}"
-     class="flex flex-col bg-indigo-700 h-screen w-screen">
+<div
+    x-data="{
+        showSubscribe: @entangle('showSubscribe'),
+        showSuccess: @entangle('showSuccess')
+    }"
+    class="flex flex-col bg-indigo-700 h-screen w-screen">
     <nav class="pt-5 flex justify-between container mx-auto text-indigo-200 ">
         <a href="/" class="text-4xl font-bold">
             <x-application-logo class="w-16 h-16 fill-current">
@@ -36,8 +37,8 @@ showSuccess: false
             Puedes subscribirte
         </p>
         <form
-                wire:submit.prevent="Subscribe"
-                class="flex flex-col items-center p-24">
+            wire:submit.prevent="Subscribe"
+            class="flex flex-col items-center p-24">
             <x-input class="px-5 py-3 w-80 border border-blue-400"
                      type="email" name="email"
                      placeholder="@email"
@@ -61,7 +62,6 @@ showSuccess: false
         <p class="text-white font-extrabold text-5xl text-center mt-16">Exitoso</p>
         <p class="text-white text-3xl text-center">Enlace enviado</p>
     </x-modal_page>
-
 
 
 </div>
