@@ -60,7 +60,14 @@
             &check;
         </p>
         <p class="text-white font-extrabold text-5xl text-center mt-16">Exitoso</p>
-        <p class="text-white text-3xl text-center">Enlace enviado</p>
+        @if(request()->has('verified') && request()->verified == 1 )
+            <p class="text-white text-3xl text-center">
+                Tu casilla ha sido confirmada
+            </p>
+        @else
+            <p class="text-white text-3xl text-center">Enlace enviado</p>
+        @endif
+
     </x-modal_page>
 
 
