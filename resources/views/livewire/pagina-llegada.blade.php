@@ -42,15 +42,19 @@
             <x-input class="px-5 py-3 w-80 border border-blue-400"
                      type="email" name="email"
                      placeholder="@email"
-                     wire:model="email"
+                     wire:model.defer="email"
             >
-
             </x-input>
             <span class="text-gray-100 text-xs">
                 {{$errors->has('email')?$errors->first('email'):'Enviaremos un correo de confirmación'}}
             </span>
             <x-button clsss="px-5 py-3 mt-5 w-80 bg-blue-500 justify-center">
-                Desde aquí
+                <span class="animate-spin" wire:loading wire:target="Subscribe">
+                    &#9696;
+                </span>
+                <span wire:loading.remove wire:target="Subscribe">
+                    Desde aquí
+                </span>
             </x-button>
         </form>
     </x-modal_page>
