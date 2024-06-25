@@ -1,4 +1,17 @@
-<div>
+<div class="px-8">
+
+    <x-input
+        type="text"
+        name="search"
+        placeholder="Buscar..."
+        class="rounded-lg border float-right border-gray-200 w-1/3 mt-2 mb-3 pl-8 "
+        wire:model="search"
+    >
+        <x-slot name="icon">
+            <i class="fa fa-search"></i>
+        </x-slot>
+    </x-input>
+
     @if($subscriptores->isEmpty())
         <div class="flex w-full bg-red-200 p-5 rounded-xl ">
             <p class="text-red-500">No se encontraron subscriptores</p>
